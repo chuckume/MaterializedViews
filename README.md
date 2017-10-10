@@ -1,8 +1,8 @@
 # MaterializedViews
 
-This repository contains the test data and code to test materilied view:
+This repository contains the test data and code to test materialized view:
 
-To load test data:
+TO LOAD DATA:
 
     createdb dbtest
     psql -f accounts.sql dbtest
@@ -13,3 +13,7 @@ To load test data:
     psql -f daily_all dbtest
     psql -f monthly_all dbtest
     psql -f monthly_nonmaterialized dbtest          
+
+TO TEST PERFORMANCE:
+    SELECT * FROM monthly_all;
+    SELECT * FROM monthly_nonmaterialized;
