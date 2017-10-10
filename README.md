@@ -15,5 +15,6 @@ TO LOAD DATA:
     psql -f monthly_nonmaterialized dbtest          
 
 TO TEST PERFORMANCE:
-    SELECT * FROM monthly_all;
-    SELECT * FROM monthly_nonmaterialized;
+
+    SELECT * FROM monthly_all
+    SELECT * FROM monthly_nonmaterialized
