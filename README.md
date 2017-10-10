@@ -1,4 +1,4 @@
-"# MaterializedViews"
+# MaterializedViews
 
 This repository contains the test data and code for this blog post: http://hashrocket.com/blog/posts/materialized-view-strategies-using-postgresql
 
