@@ -1,13 +1,15 @@
 # MaterializedViews
 
-This repository contains the test data and code for this blog post: http://hashrocket.com/blog/posts/materialized-view-strategies-using-postgresql
+This repository contains the test data and code to test materilied view:
 
 To load test data:
 
-    createdb pg_cache_demo
-    psql -f accounts.sql pg_cache_demo
-    psql -f transactions.sql pg_cache_demo
-    psql -f postgresql_view.sql pg_cache_demo
-    psql -f postgresql_mat_view.sql pg_cache_demo
-    psql -f eager_mat_view.sql pg_cache_demo
-    psql -f lazy_mat_view.sql pg_cache_demo
+    createdb dbtest
+    psql -f accounts.sql dbtest
+    psql -f transactions.sql dbtest
+    psql -f transactions_v.sql dbtest
+    psql -f daily_v.sql dbtest
+    psql -f daily_m.sql dbtest
+    psql -f daily_all dbtest
+    psql -f monthly_all dbtest
+    psql -f monthly_nonmaterialized dbtest          
