@@ -1,0 +1,6 @@
+CREATE OR REPLACE VIEW public.daily_v AS
+ SELECT date_day,
+    sum(amount) AS sum
+   FROM transactions_v
+  WHERE post_time >= '2017-12-31 00:00:00+00'
+  GROUP BY date_day

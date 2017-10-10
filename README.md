@@ -10,11 +10,11 @@ TO LOAD DATA:
     psql -f transactions_v.sql dbtest
     psql -f daily_v.sql dbtest
     psql -f daily_m.sql dbtest
-    psql -f daily_all dbtest
-    psql -f monthly_all dbtest
-    psql -f monthly_nonmaterialized dbtest          
+    psql -f daily_all.sql dbtest
+    psql -f monthly_all.sql dbtest
+    psql -f monthly_nonmaterialized.sql dbtest          
 
 TO TEST PERFORMANCE:
 
-    SELECT * FROM monthly_all
-    SELECT * FROM monthly_nonmaterialized
+    EXPLAIN ANALYZE SELECT * FROM monthly_all
+    EXPLAIN ANALYZE SELECT * FROM monthly_nonmaterialized
